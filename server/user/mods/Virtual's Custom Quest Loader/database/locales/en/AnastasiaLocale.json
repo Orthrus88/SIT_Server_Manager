@@ -1,0 +1,36 @@
+{
+    "Anastasia_1 name": "Accessories Extravaganza!",
+    "Anastasia_1 description": "Hey, I'm Anastasia. I'm Russian, and no need to mention it, I know you've been sent by Svetlana. I'm the supplier of all the accessories you need for your weapons, but you'll have to earn them. I'll assign you tasks to accomplish. Complete them successfully, and you can expect to get better accessories. Oh, and just like Svetlana, I offer more affordable prices than other traders. I also buy back accessories at more advantageous prices, so you know where to sell them. Good luck!",
+    "Anastasia_1 startedMessageText": "Hey, I'm Anastasia. I'm Russian, and no need to mention it, I know you've been sent by Svetlana. I'm the supplier of all the accessories you need for your weapons, but you'll have to earn them. I'll assign you tasks to accomplish. Complete them successfully, and you can expect to get better accessories. Oh, and just like Svetlana, I offer more affordable prices than other traders. I also buy back accessories at more advantageous prices, so you know where to sell them. Good luck!",
+    "Anastasia_1 successMessageText": "Your reputation speaks for itself. Great job! Take a look at my shop, you'll have access to new accessories.",
+    "Anastasia_1 Obj_1": "Eliminate 20 PMC",
+    "Anastasia_1 Obj_2": "Eliminate 20 Scavs",
+    "Anastasia_1 Obj_3": "Eliminate 2 BOSS",
+
+    "Anastasia_2 name": "Member of MI6 ?",
+    "Anastasia_2 description": "As I mentioned earlier, I have everything here, but there are some conditions to meet, and they won't be easy to meet. Your objective is to bring me all the silencers you can find, even those already installed on weapons. Don't bother looking for them in other shops, I want the authentic ones, the ones that have been used in the field. And, on top of that, I want you to end the lives of 50 scavs. It's time to get them out of my shop, it's getting unbearable.",
+    "Anastasia_2 startedMessageText": "As I mentioned earlier, I have everything here, but there are some conditions to meet, and they won't be easy to meet. Your objective is to bring me all the silencers you can find, even those already installed on weapons. Don't bother looking for them in other shops, I want the authentic ones, the ones that have been used in the field. And, on top of that, I want you to end the lives of 50 scavs. It's time to get them out of my shop, it's getting unbearable.",
+    "Anastasia_2 successMessageText": "Wow, there are so many silencers here! Many thanks to you for this incredible collection!",
+    "Anastasia_2 Obj_1": "Find 20 Silencers [Found in Raid]",
+    "Anastasia_2 Obj_2": "Give the silencers",
+    "Anastasia_2 Obj_3": "Eliminate 50 Scavs using silenced weapons",
+
+    "Anastasia_3 name": "Royal Loyalty",
+    "Anastasia_3 description": "I appreciate your work method, your efficiency and your determination. Although I do not take sides, my loyalty to my customers is unwavering. This balance with my customers allows me to provide equipment without delay at all times. However, you are an exception as an intermediary with BEARs, and I need to know that you have their complete trust. Prove it and you will be rewarded with the best arsenal you can find here in Tarkov.",
+    "Anastasia_3 startedMessageText": "I appreciate your work method, your efficiency and your determination. Although I do not take sides, my loyalty to my customers is unwavering. This balance with my customers allows me to provide equipment without delay at all times. However, you are an exception as an intermediary with BEARs, and I need to know that you have their complete trust. Prove it and you will be rewarded with the best arsenal you can find here in Tarkov.",
+    "Anastasia_3 successMessageText": "It's incredible! Help yourself, you deserve it! Maybe we'll have the opportunity to work together again on new tasks. See you soon.",
+    "Anastasia_3 Obj_1": "Achieving Royal Loyalty with Svetlana (LL4)",
+    
+    "Anastasia_4 name": "Unknown Transmission",
+    "Anastasia_4 description": "Hello comrade. You don't know me yet, but don't worry, we're going to become the best of friends, I guarantee it. I know that you and your little gang won't get very far if you don't stock up with me, where I can supply you... By the way, you should hurry up and get medical supplies for your comrades, or I don't give much for your skin.",
+    "Anastasia_4 startedMessageText": "Hello comrade. You don't know me yet, but don't worry, we're going to become the best of friends, I guarantee it. I know that you and your little gang won't get very far if you don't stock up with me, where I can supply you... By the way, you should hurry up and get medical supplies for your comrades, or I don't give much for your skin.",
+    "Anastasia_4 successMessageText": "End of transmission.",
+    "Anastasia_4 Obj_1": "See you later.",
+    
+    "Anastasia_5 name": "Retribution",
+    "Anastasia_5 description": "Sorry, mercenary! My bad for not noticing you earlier. Those annoying scavs really messed up a big chunk of my cargo, and it feels like they're just laughing at me. Here's the deal : if you're up for taking on those scavs and showing them who's boss, there could be a nice reward waiting for you.",
+    "Anastasia_5 startedMessageText": "Hey there, mercenary! My bad for not noticing you earlier. Those annoying scavs really messed up a big chunk of my cargo, and it feels like they're just laughing at me. Here's the deal : if you're up for taking on those scavs and showing them who's boss, there could be a nice reward waiting for you.",
+    "Anastasia_5 successMessageText": "Nice job, mercenary! Feel free to check out the goodies in my shop, there might be something that catches your eye now!",
+    "Anastasia_5 Obj_1": "Eliminate 30 Scavs",
+    "Anastasia_5 Obj_2": "Eliminate 3 BOSS"
+}

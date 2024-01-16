@@ -1,0 +1,23 @@
+{
+    "Anastasia_1 name": "Exteravaganza Příslušenství!",
+    "Anastasia_1 description": "Zdravím, jsem Anastasia. Jsem Ruska a není potřeba to zmiňovat. Vím, že tě poslala Světlana. Jsem dodavatel jakéhokoliv příslušenství pro tvoje zbraně, ale musíš pro to taky něco udělat. Dám ti úkol, kterej musíš splnit. Splň je a tvůj přístup k lepšímu vybavení je zaručen. A ještě, stejně jako Světlana vykupuji příslušenství za lepší ceny, tak ať víš kde máš prodávat. Hodně štěstí.",
+    "Anastasia_1 startedMessageText": "Zdravím, jsem Anastasia. Jsem Ruska a není potřeba to zmiňovat. Vím, že tě poslala Světlana. Jsem dodavatel jakéhokoliv příslušenství pro tvoje zbraně, ale musíš pro to taky něco udělat. Dám ti úkol, kterej musíš splnit. Splň je a tvůj přístup k lepšímu vybavení je zaručen. A ještě, stejně jako Světlana vykupuji příslušenství za lepší ceny, tak ať cíš kde máš prodávat. Hodně štěstí.",
+    "Anastasia_1 successMessageText": "Tvoje reputace mluví sama za sebe. Dobrá práce. Nezapomeň se u mě zastavit, budeš mít přístup k novému příslušenství.",
+    "Anastasia_1 Obj_1": "Eliminuj 20 PMC",
+    "Anastasia_1 Obj_2": "Eliminuj 20 scavů",
+    "Anastasia_1 Obj_3": "Eliminuj 2 BOSS",
+
+    "Anastasia_2 name": "Člen MI6?",
+    "Anastasia_2 description": "Jak už jsem zmínila, mám tu vše, ale musíš splnit určité podmínky a ty nebudou lehké. Tvůj úkol, je mi donést veškeré tlumiče které najdeš, i ty připevněné na zbraních. Ani se neobtěžuj se dívat po obchodech, chci jen ty autentické, ty které jsou používány v boji. A ještě po tobě chci abys zabil 50 scavů. Je načase je dostat z mého obchodu, začíná to být k nevydržení.",
+    "Anastasia_2 startedMessageText": "Jak už jsem zmínila, mám tu vše, ale musíš splnit určité podmínky a ty nebudou lehké. Tvůj úkol, je mi donést veškeré tlumiče které najdeš, i ty připevněné na zbraních. Ani se neobtěžuj se dívat po obchodech, chci jen ty autentické, ty které jsou používány v boji. A ještě po tobě chci abys zabil 50 scavů. Je načase je dostat z mého obchodu, začíná to být k nevydržení.",
+    "Anastasia_2 successMessageText": "Wow, tolik tlumičů! Mnohé díky za tuto úžasnou sbírku.",
+    "Anastasia_2 Obj_1": "Najdi v raidu 20 tlumičů",
+    "Anastasia_2 Obj_2": "Předej tlumiče",
+    "Anastasia_2 Obj_3": "Eliminuj 50 scavů za pomocí tlumených zbraní",
+
+    "Anastasia_3 name": "Královská Loajalita",
+    "Anastasia_3 description": "Cením si tvé pracovní metody, efektivity a tvého odhodlání. I když jsem nestraná, má loajalita zákazníkům je nehynoucí. Tento balanc s mými zákazníky, mi umožňuje dodávat zboží kdykoliv bez problémů. Každopádně, ty jsi výjimka, jako prostědník mezi USEC a BEAR a já potřebuji vědět, že máš jejich absolutní důvěru. Dokaž to a budeš odměněn nejlepším arzenálem, který můžeš v Tarkově najít.",
+    "Anastasia_3 startedMessageText": "Cením si tvé pracovní metody, efektivity a tvého odhodlání. I když jsem nestraná, má loajalita zákazníkům je nehynoucí. Tento balanc s mými zákazníky, mi umožňuje dodávat zboží kdykoliv bez problémů. Každopádně, ty jsi výjimka, jako prostědník mezi USEC a BEAR a já potřebuji vědět, že máš jejich absolutní důvěru. Dokaž to a budeš odměněn nejlepším arzenálem, který můžeš v Tarkově najít.",
+    "Anastasia_3 successMessageText": "To je úžasné! Posluž si, zasloužíš si to! Možná budeme mít šanci zase pracovat spolu na jiných misích. Brzy se uvidíme.",
+    "Anastasia_3 Obj_1": "Dosáhni královské loajality se Světlanou (LL4)"
+}

@@ -1,0 +1,37 @@
+{
+    "Anastasia_1 name": "Extravaganza d'Accessoires",
+    "Anastasia_1 description": "Salut, moi c'est Anastasia. Je suis russe, et inutile de le préciser, je sais que tu as été envoyé par Svetlana. Je suis la fournisseuse de tous les accessoires dont tu as besoin pour tes armes, mais il faudra les mériter. Je te confierai des tâches à accomplir. Accomplis-les avec succès, et tu pourras espérer obtenir de meilleurs accessoires. Oh, et comme Svetlana, je propose des prix plus abordables que les autres traders. Je reprends aussi les accessoires à des prix plus avantageux, donc tu sais chez qui les vendre. Bonne chance.",
+    "Anastasia_1 startedMessageText": "Salut, moi c'est Anastasia. Je suis russe, et inutile de le préciser, je sais que tu as été envoyé par Svetlana. Je suis la fournisseuse de tous les accessoires dont tu as besoin pour tes armes, mais il faudra les mériter. Je te confierai des tâches à accomplir. Accomplis-les avec succès, et tu pourras espérer obtenir de meilleurs accessoires. Oh, et comme Svetlana, je propose des prix plus abordables que les autres traders. Je reprends aussi les accessoires à des prix plus avantageux, donc tu sais chez qui les vendre. Bonne chance.",
+    "Anastasia_1 successMessageText": "Ta réputation est bien ce qu'elle est. Du bon travail. Tiens, jette un coup d'œil à ma boutique, tu auras accès à de nouveaux accessoires.",
+    "Anastasia_1 Obj_1": "Eliminez 20 PMC",
+    "Anastasia_1 Obj_2": "Eliminez 20 Scavs",
+    "Anastasia_1 Obj_3": "Eliminez 2 BOSS",
+
+    "Anastasia_2 name": "Membre du MI6 ?",
+    "Anastasia_2 description": "Comme je l'ai mentionné précédemment, j'ai de tout ici, mais il y a certaines conditions à respecter, et elles ne seront pas faciles à remplir. Ton objectif est de me ramener tous les silencieux que tu pourras trouver, même ceux déjà installés sur des armes. Ne te tracasse pas à les chercher dans d'autres magasins, je veux des modèles authentiques, ceux qui ont été utilisés sur le terrain. Et, en plus de cela, je te demande de mettre fin à la vie de 50 scavs. Il est grand temps de les éloigner de ma boutique, ça devient insupportable.",
+    "Anastasia_2 startedMessageText": "Comme je l'ai mentionné précédemment, j'ai de tout ici, mais il y a certaines conditions à respecter, et elles ne seront pas faciles à remplir. Ton objectif est de me ramener tous les silencieux que tu pourras trouver, même ceux déjà installés sur des armes. Ne te tracasse pas à les chercher dans d'autres magasins, je veux des modèles authentiques, ceux qui ont été utilisés sur le terrain. Et, en plus de cela, je te demande de mettre fin à la vie de 50 scavs. Il est grand temps de les éloigner de ma boutique, ça devient insupportable.",
+    "Anastasia_2 successMessageText": "Waouh, il y a tellement de silencieux ici !! Un grand merci à toi pour cette incroyable collection !",
+    "Anastasia_2 Obj_1": "Trouvez 20 Silencieux en raid",
+    "Anastasia_2 Obj_2": "Donnez les Silencieux",
+    "Anastasia_2 Obj_3": "Éliminez 50 scavs en utilisant des armes équipées de Silencieux",
+
+    "Anastasia_3 name": "Loyauté Royale",
+    "Anastasia_3 description": "J'apprécie ta méthode de travail, ton efficacité et ta détermination. Bien que je ne prenne pas parti, ma loyauté envers mes clients est inébranlable. Cet équilibre avec mes clients me permet de fournir en permanence des équipements sans délai. Cependant, tu es une exception en tant qu'intermédiaire avec les BEAR, et j'ai besoin de savoir si tu as leur confiance totale. Prouve-le et tu seras récompensé avec le meilleur arsenal que tu pourras trouver ici à Tarkov.",
+    "Anastasia_3 startedMessageText": "J'apprécie ta méthode de travail, ton efficacité et ta détermination. Bien que je ne prenne pas parti, ma loyauté envers mes clients est inébranlable. Cet équilibre avec mes clients me permet de fournir en permanence des équipements sans délai. Cependant, tu es une exception en tant qu'intermédiaire avec les BEAR, et j'ai besoin de savoir si tu as leur confiance totale. Prouve-le et tu seras récompensé avec le meilleur arsenal que tu pourras trouver ici à Tarkov.",
+    "Anastasia_3 successMessageText": "C'est incroyable ! Sers-toi, tu le mérites amplement ! Peut-être aurons-nous l'occasion de collaborer à nouveau pour de nouvelles tâches. À bientôt.",
+    "Anastasia_3 Obj_1": "Atteindre la loyauté Royale avec Svetlana (LL4)",
+
+    "Anastasia_4 name": "Transmission inconnue",
+    "Anastasia_4 description": "Salut camarade. Tu ne me connais pas encore, mais ne t'inquiète pas, nous allons devenir les meilleurs amis, je te le garantis. Je sais que toi et ta petite bande n'irez pas très loin si vous ne vous approvisionnez pas chez moi, où je peux vous fournir... D'ailleurs, tu devrais te dépêcher d'aller chercher des soins pour tes camarades, sinon je ne donne pas cher de votre peau.",
+    "Anastasia_4 startedMessageText": "Salut camarade. Tu ne me connais pas encore, mais ne t'inquiète pas, nous allons devenir les meilleurs amis, je te le garantis. Je sais que toi et ta petite bande n'irez pas très loin si vous ne vous approvisionnez pas chez moi, où je peux vous fournir... D'ailleurs, tu devrais te dépêcher d'aller chercher des soins pour tes camarades, sinon je ne donne pas cher de votre peau.",
+    "Anastasia_4 successMessageText": "Fin de transmission.",
+    "Anastasia_4 Obj_1": "On se voit plus tard.",
+
+    "Anastasia_5 name": "Rétribution",
+    "Anastasia_5 description": "блудница ! Désolé, mercenaire ! Excuse moi de ne pas t'avoir remarqué plus tôt. Ces sales charognards ont foutu en l'air une grosse partie de ma cargaison, et il semble qu'ils se moquent ouvertement de ma situation. Voici le deal : si tu es prêt à t'occuper de ces charognards et à leur montrer qui est le patron, il pourrait y avoir une belle récompense qui t'attend.",
+    "Anastasia_5 startedMessageText": "блудница ! Désolé, mercenaire ! Excuse moi de ne pas t'avoir remarqué plus tôt. Ces sales charognards ont foutu en l'air une grosse partie de ma cargaison, et il semble qu'ils se moquent ouvertement de ma situation. Voici le deal : si tu es prêt à t'occuper de ces charognards et à leur montrer qui est le patron, il pourrait y avoir une belle récompense qui t'attend.",
+    "Anastasia_5 successMessageText": "Bien joué, mercenaire ! Vas voir ce que j'ai dans ma boutique, il y a peut-être des choses qui te plairont dedans !",
+    "Anastasia_5 Obj_1": "Eliminez 30 Scavs",
+    "Anastasia_5 Obj_2": "Eliminez 3 BOSS"
+
+}

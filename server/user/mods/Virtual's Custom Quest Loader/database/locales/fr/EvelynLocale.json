@@ -1,0 +1,61 @@
+{
+    "Evelyn_1 name": "L'Ouest - Partie 1",
+    "Evelyn_1 description": "Bordel de merde .. Tiens, toi, prends vite ce Berreta et aide-nous à nous débarasser de ces gopniks au plus vite ! Les présentations, ça peut attendre.",
+    "Evelyn_1 startedMessageText": "Bordel de merde .. Tiens, toi, prends vite ce Berreta et aide-nous à nous débarasser de ces gopniks au plus vite ! Les présentations, ça peut attendre.",
+    "Evelyn_1 successMessageText": "Bon travail ! Je savais que ces gopniks ne seraient pas un problème pour toi.",
+    "Evelyn_1 Obj_1": "Tuer 8 scavs à l'aide d'un M9 Berreta sur Usine",
+
+    "Evelyn_2 name": "Apte au combat",
+    "Evelyn_2 description": "Avant de partir au front, il va falloir que tu t'entraînes. On est pas beaucoup ici au camp et le temps presse. Accélère le rythme.",
+    "Evelyn_2 startedMessageText": "Avant de partir au front, il va falloir que tu t'entraînes. On est pas beaucoup ici au camp et le temps presse. Accélère le rythme.",
+    "Evelyn_2 successMessageText": "Bien, tu es maintenant prêt au combat.",
+    "Evelyn_2 Obj_1": "Monter la Force au Niveau 3",
+    "Evelyn_2 Obj_2": "Monter l'Endurance au Niveau 2",
+
+    "Evelyn_3 name": "L'Ouest - Partie 2",
+    "Evelyn_3 description": "Maintenant que tu as terminé ton entraînement, nous devons quitter l'Usine au plus vite. Oui il est tard, mais nous avons été repérés rapidement par les BEAR en raison des tirs avec les scavs, et nous ne sommes pas en mesure de rivaliser ici. Cependant, j'ai une idée avant notre départ. Prends ces clés USB et installe-les dans le bureau condamné au troisième étage. Elles contiennent un petit cadeau de fausses informations. On y voit presque rien de nuit alors fait gaffe.",
+    "Evelyn_3 startedMessageText": "Maintenant que tu as terminé ton entraînement, nous devons quitter l'Usine au plus vite. Oui il est tard, mais nous avons été repérés rapidement par les BEAR en raison des tirs avec les scavs, et nous ne sommes pas en mesure de rivaliser ici. Cependant, j'ai une idée avant notre départ. Prends ces clés USB et installe-les dans le bureau condamné au troisième étage. Elles contiennent un petit cadeau de fausses informations. On y voit presque rien de nuit alors fait gaffe.",
+    "Evelyn_3 successMessageText": "Bien, maintenant partons !",
+    "Evelyn_3 Obj_1": "Trouvez l'emplacement du bureau condamnée (de nuit)",
+    "Evelyn_3 Obj_2": "Déposez les 3 clés USB",
+
+    "Evelyn_4 name": "Rencontre inattendue",
+    "Evelyn_4 description": "Nous avons reçu l'information qu'une base a été prise au sud de l'Usine, et il faut que nous nous dirigions là-bas pour rejoindre les autres. J'ai d'ailleurs reçu une transmission bizarre sur notre canal sécurisé d'un individu non identifié... Je ne comprends pas.",
+    "Evelyn_4 startedMessageText": "Nous avons reçu l'information qu'une base a été prise au sud de l'Usine, et il faut que nous nous dirigions là-bas pour rejoindre les autres. J'ai d'ailleurs reçu une transmission bizarre sur notre canal sécurisé d'un individu non identifié... Je ne comprends pas.",
+    "Evelyn_4 successMessageText": "...",
+    "Evelyn_4 Obj_1": "Écoutez la Transmission d'Anastasia",
+
+    "Evelyn_5 name": "La Petite Bande",
+    "Evelyn_5 description": "Écoute... C'est vraiment la merde, on a besoin de soigner nos soldats au plus vite. Va nous chercher les soins que tu peux rapidement. Tu devrais en trouver dans le bâtiment médical des Douanes.",
+    "Evelyn_5 startedMessageText": "Écoute... C'est vraiment la merde, on a besoin de soigner nos soldats au plus vite. Va nous chercher les soins que tu peux rapidement. Tu devrais en trouver dans le bâtiment médical des Douanes.",
+    "Evelyn_5 successMessageText": "Merci... Bon on a plus beaucoup de temps il faut qu'on se remette en route.",
+    "Evelyn_5 Obj_1": "Augmenter la Santé au Niveau 3",
+    "Evelyn_5 Obj_2": "Donner 1 CMS [Trouvé en Raid]",
+    "Evelyn_5 Obj_3": "Donner 2 Attelle d'aluminium [Trouvé en Raid]",
+    "Evelyn_5 Obj_4": "Donner 2 Calok-B [Trouvé en Raid]",
+    "Evelyn_5 Obj_5": "Donner 2 IFAK [Trouvé en Raid]",
+    "Evelyn_5 Obj_6": "Donner 3 Bandages militaires [Trouvé en Raid]",
+    "Evelyn_5 Obj_7": "Donner 3 Morphines [Trouvé en Raid]",
+
+    "Evelyn_6 name": "Nettoyage",
+    "Evelyn_6 description": "Enfin, nous sommes arrivés aux Douanes ! Éclaireurs, votre tâche principale est de mettre en place un périmètre sécurisé. Tout le monde, prenez une pause et rechargez votre énergie. Camarade, votre mission est cruciale : rendez-vous aux dortoirs, sécurisez un havre sûr pour notre repos et procurez des provisions alimentaires essentielles. Déplacez-vous rapidement ! J'ai besoin de planifier notre point de rendez-vous avec le groupe principal.",
+    "Evelyn_6 startedMessageText": "Enfin, nous sommes arrivés aux Douanes ! Éclaireurs, votre tâche principale est de mettre en place un périmètre sécurisé. Tout le monde, prenez une pause et rechargez votre énergie. Camarade, votre mission est cruciale : rendez-vous aux dortoirs, sécurisez un havre sûr pour notre repos et procurez des provisions alimentaires essentielles. Déplacez-vous rapidement ! J'ai besoin de planifier notre point de rendez-vous avec le groupe principal.",
+    "Evelyn_6 successMessageText": "Bien joué, camarade ! Suivez-moi à la cuisine ; nous devons discuter de notre stratégie pour nous regrouper avec l'équipe principale.",
+    "Evelyn_6 Obj_1": "Fouillez et apportez 5 Thusonka",
+    "Evelyn_6 Obj_2": "Fouillez et apportez 5 bouteilles d'eau Aquamari",
+    "Evelyn_6 Obj_3": "Éliminez 8 menaces dans la zone des dortoirs aux Douanes",
+
+    "Evelyn_7 name": "Cadeau de Bienvenue",
+    "Evelyn_7 description": "Allez, on se lève ! Attrape ton arme, quelqu'un attaque les dortoirs. On dirait un local qui défend son territoire, et on a accidentellement débarqué là-dedans. Mais ce n'est pas notre problème pour le moment. Saluons-les avec la bonne vieille puissance de feu à l'occidentale, opérateur !",
+    "Evelyn_7 startedMessageText": "Allez, on se lève ! Attrape ton arme, quelqu'un attaque les dortoirs. On dirait un local qui défend son territoire, et on a accidentellement débarqué là-dedans. Mais ce n'est pas notre problème pour le moment. Saluons-les avec la bonne vieille puissance de feu à l'occidentale, opérateur !",
+    "Evelyn_7 successMessageText": "Pouah... ! Ce type était coriace... Bon, dépêchons-nous, il faut qu'on rejoigne notre groupe de soldats à la Base Militaire.",
+    "Evelyn_7 Obj_1": "Éliminez Reshala",
+
+    "Evelyn_8 name": "L'Ouest - Partie 3",
+    "Evelyn_8 description": "En fouillant le corps de Reshala, nous avons découvert un document crucial. Celui qui a dirigé ces attaques kamikazes contre nous semble avoir des liens dans le nord-est de la région de Tarkov. Selon notre carte, les endroits probables sont les Rues de Tarkov et Interchange. Commence par Interchange ; vois si tu peux trouver un chef de guerre qui fait des ravages et récupère quelque chose de sa part. Il est temps de remonter à la source des ennuis !",
+    "Evelyn_8 startedMessageText": "En fouillant le corps de Reshala, nous avons découvert un document crucial. Celui qui a dirigé ces attaques kamikazes contre nous semble avoir des liens dans le nord-est de la région de Tarkov. Selon notre carte, les endroits probables sont les Rues de Tarkov et Interchange. Commence par Interchange ; vois si tu peux trouver un chef de guerre qui fait des ravages et récupère quelque chose de sa part. Il est temps de remonter à la source des ennuis !",
+    "Evelyn_8 successMessageText": "Excellent travail ! Tu as éliminé Killa, un chef redoutable parmi les scavs. En fouillant la zone, nous avons trouvé des informations précieuses en sa possession. Il semble qu'il avait une carte indiquant des emplacements potentiels de cibles et une liste de contacts. Ces renseignements pourraient être cruciaux pour démanteler leur réseau. Tes actions nous ont procuré un avantage significatif. Merci d'avoir sécurisé ces informations vitales !",
+    "Evelyn_8 Obj_1": "Éliminer Killa",
+    "Evelyn_8 Obj_2": "Remettre le casque de Killa [Trouvé en Raid]"
+      
+}

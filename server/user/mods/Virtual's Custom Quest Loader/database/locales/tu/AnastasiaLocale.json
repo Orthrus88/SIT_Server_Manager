@@ -1,0 +1,36 @@
+{
+    "Anastasia_1 name": "Aksesuar Şenliği!",
+    "Anastasia_1 description": "Hey, ben Anastasia. Rusya’dan geldim ve hiç söylemene gerek yok, seni Svetlana gönderdi biliyorum. Silahlarına ihtiyacın olabilecek tüm aksesuarları ben tedarik edeceğim, ancak biraz senin de onları hak etmen gerekecek. Sana görevler vereceğim. Başarıyla tamamlayıp geldiğin takdirde bu görevler sana daha çok aksesuarın kapılarını açacak. Hem de ekipmanımı sana Svetlana gibi, Tarkov’da hali hazırda tanıştığın diğer satıcılardan daha makul fiyatlara bırakırım. Elinde satmak istediğin aksesuarların varsa bana getirmek isteyebilirsin, onlara da daha çok para veririm. İyi şanslar!",
+    "Anastasia_1 startedMessageText": "Hey, ben Anastasia. Rusya’dan geldim ve hiç söylemene gerek yok, seni Svetlana gönderdi biliyorum. Silahlarına ihtiyacın olabilecek tüm aksesuarları ben tedarik edeceğim, ancak biraz senin de onları hak etmen gerekecek. Sana görevler vereceğim. Başarıyla tamamlayıp geldiğin takdirde bu görevler sana daha çok aksesuarın kapılarını açacak. Hem de ekipmanımı sana Svetlana gibi, Tarkov’da hali hazırda tanıştığın diğer satıcılardan daha makul fiyatlara bırakırım. Elinde satmak istediğin aksesuarların varsa bana getirmek isteyebilirsin, onlara da daha çok para veririm. İyi şanslar!",
+    "Anastasia_1 successMessageText": "Elinden gelenler belli oluyor, iyi iş çıkardın! Gel mağazama bir göz at, yeni aksesuarlara erişimin var artık.",
+    "Anastasia_1 Obj_1": "20 PMC Etkisiz Hale Getir",
+    "Anastasia_1 Obj_2": "20 Scav Öldür",
+    "Anastasia_1 Obj_3": "2 BOSS Etkisiz Hale Getir",
+
+    "Anastasia_2 name": "MI6 Elemanı mı?",
+    "Anastasia_2 description": "Daha önce de belirttiğim gibi burada nerdeyse her şeye sahibim, yalnız senin bunlara erişmek için birkaç şartı sağlaman gerekiyor ki bunlar da öyle kolay olmayacak. Görevin, bulabildiğin tüm susturucuları bana getirmek, silahlarda hali hazırda takılı olanları dahi. Diğer satıcılardan almakla falan uğraşma, sahici olanları, sahada kullanılmış olanları istiyorum. Bir de bir ton Scav öldürmeni istiyorum. Şunları mağazamdan defetme vakti, bıktım usandım.",
+    "Anastasia_2 startedMessageText": "Daha önce de belirttiğim gibi burada nerdeyse her şeye sahibim, yalnız senin bunlara erişmek için birkaç şartı sağlaman gerekiyor ki bunlar da öyle kolay olmayacak. Görevin, bulabildiğin tüm susturucuları bana getirmek, silahlarda hali hazırda takılı olanları dahi. Diğer satıcılardan almakla falan uğraşma, sahici olanları, sahada kullanılmış olanları istiyorum. Bir de bir ton Scav öldürmeni istiyorum. Şunları mağazamdan defetme vakti, bıktım usandım.",
+    "Anastasia_2 successMessageText": "Vay be, ne kadar çok susturucu bulmuşsun! Bu inanılmaz koleksiyon için teşekkür ederim!",
+    "Anastasia_2 Obj_1": "Raid'de 20 Susturucu Bul",
+    "Anastasia_2 Obj_2": "Susturucuları Teslim Et",
+    "Anastasia_2 Obj_3": "Susturuculu Silahlarla 50 Scav Etkisi Hale Getir",
+
+    "Anastasia_3 name": "Sadakatin Zirvesi",
+    "Anastasia_3 description": "Çalışma tarzını, verimliliğini ve kararlılığını takdir ediyorum. Ben taraf tutmuyor olsam da, müşterilerime olan sadakatim sualsizdir. Müşterilerim ile sağladığım bu denge, her daim zamanında ekipman tedarik etmemi sağlıyor. Ancak, sen BEAR grubunun bir elçisi olarak farklısın ve onların da tam güvenine sahip olduğunu bilmem gerekiyor. Bana bunu kanıtlarsan ödülün, Tarkov’da bulabileceğin yegâne silah teçhizatı olacak!",
+    "Anastasia_3 startedMessageText": "Çalışma tarzını, verimliliğini ve kararlılığını takdir ediyorum. Ben taraf tutmuyor olsam da, müşterilerime olan sadakatim sualsizdir. Müşterilerim ile sağladığım bu denge, her daim zamanında ekipman tedarik etmemi sağlıyor. Ancak, sen BEAR grubunun bir elçisi olarak farklısın ve onların da tam güvenine sahip olduğunu bilmem gerekiyor. Bana bunu kanıtlarsan ödülün, Tarkov’da bulabileceğin yegâne silah teçhizatı olacak!",
+    "Anastasia_3 successMessageText": "İnanılmaz! Buyur buyur, hak ettin! Belki gelecekte yeni görevlerde çalışma fırsatı buluruz. Yakında görüşmek üzere.",
+    "Anastasia_3 Obj_1": "Svetlana İle Sadakatini Son Seviyeye Çıkar (LL4)",
+    
+    "Anastasia_4 name": "Bilinmeyen Mesaj",
+    "Anastasia_4 description": "Selam yoldaş. Beni henüz tanımıyorsun ancak endişe etme, yakında çok iyi dost olacağız, emin olabilirsin. Sen ve senin şu grubun benden ikmal yapmadan çok uzağa gidemez, bunun farkındayım. Ha bu arada acele et ve yoldaşlarına tıbbi malzeme bulmaya bak.",
+    "Anastasia_4 startedMessageText": "Selam yoldaş. Beni henüz tanımıyorsun ancak endişe etme, yakında çok iyi dost olacağız, emin olabilirsin. Sen ve senin şu grubun benden ikmal yapmadan çok uzağa gidemez, bunun farkındayım. Ha bu arada acele et ve yoldaşlarına tıbbi malzeme bulmaya bak.",
+    "Anastasia_4 successMessageText": "Mesaj Kesildi.",
+    "Anastasia_4 Obj_1": "Sonra Görüşeceğiz.",
+    
+    "Anastasia_5 name": "İntikam",
+    "Anastasia_5 description": "Блудиница! Kusura bakma. Seni daha önce farkedemedim. Şu Scavler kargomun büyük kısmını mahvettiler, şu saatten sonra benimle billur geçiyorlar gibi. Olay şu, gidip onların çaresine bakıp kimin patron olduğunu göstermeye varsan seni bekleyen güzel bir ödül olabilir.",
+    "Anastasia_5 startedMessageText": "Блудиница! Kusura bakma. Seni daha önce farkedemedim. Şu Scavler kargomun büyük kısmını mahvettiler, şu saatten sonra benimle billur geçiyorlar gibi. Olay şu, gidip onların çaresine bakıp kimin patron olduğunu göstermeye varsan seni bekleyen güzel bir ödül olabilir.",
+    "Anastasia_5 successMessageText": "İyi iş çıkardın operatör! Marketimdeki mallara bi göz at, ilgini çeken bir şeyler olabilir! ",
+    "Anastasia_5 Obj_1": "30 Scav Etkisiz Hale Getir",
+    "Anastasia_5 Obj_2": "3 BOSS Etkisiz Hale Getir"
+}

@@ -1,0 +1,36 @@
+{
+    "Anastasia_1 name": "Modyfikacje bez końca!",
+    "Anastasia_1 description": "Cześć, jestem Anastasia. Rosjanka. Nie musisz mi o tym mówić, wiem, że to Svetlana wysłała cię do mnie. Mogę zaopatrzyć cię we wszelkie modyfikacje do twojej broni ale najpierw musisz na nie zasłużyć. Dam ci kilka zadań do wykonania. Jeśli ci się uda, możesz liczyć na coraz lepsze akcesoria. Ach, i tak jak Svetlana, oferuję ceny znacznie niższe niż inni kupcy. Kupuję również po lepszych cenach - więc już wiesz, gdzie możesz sprzedać swó złom. Powodzenia!",
+    "Anastasia_1 startedMessageText": "Cześć, jestem Anastasia. Rosjanka. Nie musisz mi o tym mówić, wiem, że to Svetlana wysłała cię do mnie. Mogę zaopatrzyć cię we wszelkie modyfikacje do twojej broni ale najpierw musisz na nie zasłużyć. Dam ci kilka zadań do wykonania. Jeśli ci się uda, możesz liczyć na coraz lepsze akcesoria. Ach, i tak jak Svetlana, oferuję ceny znacznie niższe niż inni kupcy. Kupuję również po lepszych cenach - więc już wiesz, gdzie możesz sprzedać swó złom. Powodzenia!",
+    "Anastasia_1 successMessageText": "Twoja sława cię wyprzedza. Dobra robota! Rozejrzyj się w moim sklepie, masz dostęp do paru nowych zabawek.",
+    "Anastasia_1 Obj_1": "Wyeliminuj 20 PMC",
+    "Anastasia_1 Obj_2": "Wyeliminuj 20 Scav",
+    "Anastasia_1 Obj_3": "Wyeliminuj 2 BOSS",
+
+    "Anastasia_2 name": "Członek MI6?",
+    "Anastasia_2 description": "Jak już wspominałam, mam tu praktycznie wszystko, ale mam pewne wymagania którym niełatwo będzie podołać. Chcę od ciebie wszystkie tłumiki jakie tylko znajdziesz, nawet te już zainstalowane na broni. Nie przynoś mi nówek albo części z bazaru - chcę prawdziwe zabawki, użyte w bitwie. Ach, masz też zakończyć życie 50 scavów. Mam dość ich wizyt w moim sklepie, nie zniosę ich tutaj znacznie dłużej.",
+    "Anastasia_2 startedMessageText": "Jak już wspominałam, mam tu praktycznie wszystko, ale mam pewne wymagania którym niełatwo będzie podołać. Chcę od ciebie wszystkie tłumiki jakie tylko znajdziesz, nawet te już zainstalowane na broni. Nie przynoś mi nówek albo części z bazaru - chcę prawdziwe zabawki, użyte w bitwie. Ach, masz też zakończyć życie 50 scavów. Mam dość ich wizyt w moim sklepie, nie zniosę ich tutaj znacznie dłużej.",
+    "Anastasia_2 successMessageText": "Wow, ile tego jest! Dziękuję bardzo za tę imponującą kolekcję!",
+    "Anastasia_2 Obj_1": "Znajdź 20 tłumików [Found in Raid]",
+    "Anastasia_2 Obj_2": "Oddaj tłumiki",
+    "Anastasia_2 Obj_3": "Wyeliminuj 50 Scav używając wytłumionej broni",
+
+    "Anastasia_3 name": "Królewska Lojalność",
+    "Anastasia_3 description": "Podziwiam twe metody pracy, efektywność i determinację. Mimo że nie opowiadam się za żadną ze stron, moja lojalność względem klientów jest niezachwiana. Takie stosunki z nimi pozwala mi zaopatrywać wyposażenie bez opóźnień. Ty jednak jesteś wyjątkiem przez twoje kontakty z BEAR, a ja muszę mieć pewność że masz ich bezgraniczne zaufanie. Udowodnij mi je, a ja wynagrodzę cię z najlepszym arsenałem w całym Tarkov.",
+    "Anastasia_3 startedMessageText": "Podziwiam twe metody pracy, efektywność i determinację. Mimo że nie opowiadam się za żadną ze stron, moja lojalność względem klientów jest niezachwiana. Takie stosunki z nimi pozwala mi zaopatrywać wyposażenie bez opóźnień. Ty jednak jesteś wyjątkiem przez twoje kontakty z BEAR, a ja muszę mieć pewność że masz ich bezgraniczne zaufanie. Udowodnij mi je, a ja wynagrodzę cię z najlepszym arsenałem w całym Tarkov.",
+    "Anastasia_3 successMessageText": "Niesamowite! Czuj się jak w domu. Być może zdarzy się jeszcze jakaś okazja by pracować razem. Do zobaczenia.",
+    "Anastasia_3 Obj_1": "Osiągnij LL4 u Svetlany",
+    
+    "Anastasia_4 name": "Niezidentyfikowana transmisja",
+    "Anastasia_4 description": "Witaj, towarzyszu. Nie znasz mnie, ale nie obawiaj się, to się niedługo zmieni - zostaniemy najlepszymi przyjaciółmi. Wiem że ty i twój żałosny gang nie zajdziecie daleko beze mnie, i mojego zaopatrzenia... Swoją drogą, pospiesz się i zbierz lekarstwa dla twoich towarzyszy... inaczej może się to źle skończyć.",
+    "Anastasia_4 startedMessageText": "Witaj, towarzyszu. Nie znasz mnie, ale nie obawiaj się, to się niedługo zmieni - zostaniemy najlepszymi przyjaciółmi. Wiem że ty i twój żałosny gang nie zajdziecie daleko beze mnie, i mojego zaopatrzenia... Swoją drogą, pospiesz się i zbierz lekarstwa dla twoich towarzyszy... inaczej może się to źle skończyć.",
+    "Anastasia_4 successMessageText": "Koniec przekazu.",
+    "Anastasia_4 Obj_1": "Zobaczymy się później.",
+    
+    "Anastasia_5 name": "Zemsta",
+    "Anastasia_5 description": "Wybacz, najemniku! Nie zauważyłam cię wcześniej. Te cholerne Scavy znów uszkodziły ładunek mojego towaru, i zdaje się że mają z tego niezłą uciechę. Mam dla ciebie ofertę: jeśli chcesz im pokazać kto tu tak naprawdę rządzi... będzie to dla ciebie bardzo opłacalne.",
+    "Anastasia_5 startedMessageText": "Wybacz, najemniku! Nie zauważyłam cię wcześniej. Te cholerne Scavy znów uszkodziły ładunek mojego towaru, i zdaje się że mają z tego niezłą uciechę. Mam dla ciebie ofertę: jeśli chcesz im pokazać kto tu tak naprawdę rządzi... będzie to dla ciebie bardzo opłacalne.",
+    "Anastasia_5 successMessageText": "Dobra robota! Rozejrzyj się po sklepie, może coś wpadnie ci w oko.",
+    "Anastasia_5 Obj_1": "Wyeliminuj 30 Scav",
+    "Anastasia_5 Obj_2": "Wyeliminuj 3 BOSS"
+}

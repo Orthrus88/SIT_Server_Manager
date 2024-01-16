@@ -1,0 +1,113 @@
+{% extends "zlayout.html" %}
+
+{% block content %}
+
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.3/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to check the server status
+            function checkServerStatus() {
+                fetch('/check_status_socket', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Update the status element on the page
+                    document.getElementById('status').innerHTML = 'Status: ' + data.status;
+                })
+                .catch(error => {
+                    console.error('Error checking server status:', error);
+                });
+            }
+
+            // Call the function on page load
+            checkServerStatus();
+
+            // WebSocket connection for real-time updates
+            var socket = io.connect('http://' + document.domain + ':' + location.port + '/status');
+            socket.on('status_update', function(data) {
+                document.getElementById('status').innerHTML = 'Status: ' + data.status;
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to update resource utilization
+            function updateResourceUtilization() {
+                fetch('/get_resource_utilization', {
+                    method: 'GET'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Update CPU and RAM elements on the page
+                    document.getElementById('cpu').innerHTML = 'CPU: ' + data.cpu.toFixed(2) + '%';
+                    document.getElementById('ram').innerHTML = 'RAM: ' + data.ram.toFixed(2) + '%';
+                })
+                .catch(error => {
+                    console.error('Error updating resource utilization:', error);
+                });
+            }
+
+            // Call the function periodically
+            setInterval(updateResourceUtilization, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between;">
+        <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+            <!-- Column 1: Server Status -->
+            <h2>Server Status</h2>
+            <p id="status">Status: {{ status }}</p>
+            <p id="cpu">CPU: {{ cpu }}%</p>
+            <p id="ram">RAM: {{ ram }}%</p>
+        </div>
+        <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+            <!-- Column 2: Start, Stop, Check Status -->
+            <h2>Actions</h2>
+            <form action="{{ url_for('start_server_route') }}" method="post">
+                <button type="submit">Start Server</button>
+            </form>
+            <form action="{{ url_for('stop_server_route') }}" method="post">
+                <button type="submit">Stop Server</button>
+            </form>
+            <form action="{{ url_for('check_status_socket_route') }}" method="post">
+                <button type="submit">Check Status</button>
+            </form>
+        </div>
+        <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+            <!-- Column 3: Additional Content -->
+            <h2>Column 3</h2>
+            <!-- Add your content here -->
+        </div>
+    </div>
+    <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
+        <h2>Recent Log</h2>
+        <pre id="log-content">{{ log_content }}</pre>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to update log content
+            function updateLogContent(data) {
+                // Update the log content element on the page
+                document.getElementById('log-content').innerText = data.content;
+            }
+    
+            // WebSocket connection for real-time log updates
+            var logSocket = io.connect('http://' + document.domain + ':' + location.port + '/logs');
+            logSocket.on('log_update', updateLogContent);
+        });
+    </script>
+</body>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+{
+    "Evelyn_1 name": "Der Westen - Teil 1",
+    "Evelyn_1 description": "Was für ein Chaos... Warte, du, schnapp dir schnell die Beretta und hilf uns, diese Gopniks so schnell wie möglich loszuwerden! Die Vorstellungsrunde kann warten.",
+    "Evelyn_1 startedMessageText": "Was für ein Chaos... Warte, du, schnapp dir schnell die Beretta und hilf uns, diese Gopniks so schnell wie möglich loszuwerden! Die Vorstellungsrunde kann warten.",
+    "Evelyn_1 successMessageText": "Gut gemacht! Ich wusste, dass diese Gopniks kein Problem für dich sein würden.",
+    "Evelyn_1 Obj_1": "Töte 8 Scavs mit einer M9 Beretta in der Fabrik!",
+
+    "Evelyn_2 name": "Kampfbereit",
+    "Evelyn_2 description": "Bevor du an die Front gehst, musst du trainieren. Wir haben nicht viele Leute hier im Lager, und die Zeit wird knapp... Leg ein höheres Tempo vor.",
+    "Evelyn_2 startedMessageText": "Bevor du an die Front gehst, musst du trainieren. Wir haben nicht viele Leute hier im Lager, und die Zeit wird knapp... Leg ein höheres Tempo vor.",
+    "Evelyn_2 successMessageText": "Perfekt. Du bist jetzt kampfbereit.",
+    "Evelyn_2 Obj_1": "Stärke auf Stufe 3 erhöhen!",
+    "Evelyn_2 Obj_2": "Ausdauer auf Stufe 2 erhöhen!",
+
+    "Evelyn_3 name": "Der Westen - Teil 2",
+    "Evelyn_3 description": "Jetzt, wo du deine Ausbildung abgeschlossen hast, müssen wir die Fabrik schnell verlassen. Ja, es ist spät, aber wir wurden von den BEARs entdeckt, nachdem wir mit den Scavs eine Schießerei hatten, und wir sind nicht ausgerüstet, um hier zu überleben. Aber ich habe noch eine Idee, bevor wir aufbrechen. Nimm diese USB-Sticks und installiere sie in dem verdammten Büro im dritten Stock. Sie enthalten ein kleines Geschenk mit falschen Informationen. Nachts ist es fast stockdunkel, also sei vorsichtig.",
+    "Evelyn_3 startedMessageText": "Jetzt, wo du deine Ausbildung abgeschlossen hast, müssen wir die Fabrik schnell verlassen. Ja, es ist spät, aber wir wurden von den BEARs entdeckt, nachdem wir mit den Scavs eine Schießerei hatten, und wir sind nicht ausgerüstet, um hier zu überleben. Aber ich habe noch eine Idee, bevor wir aufbrechen. Nimm diese USB-Sticks und installiere sie in dem verdammten Büro im dritten Stock. Sie enthalten ein kleines Geschenk mit falschen Informationen. Nachts ist es fast stockdunkel, also sei vorsichtig.",
+    "Evelyn_3 successMessageText": "Gut, und jetzt los!",
+    "Evelyn_3 Obj_1": "Finde den Standort des Büros (bei Nacht)!",
+    "Evelyn_3 Obj_2": "Platziere die 3 USB-Sticks!",
+
+    "Evelyn_4 name": "Unerwartete Begegnung",
+    "Evelyn_4 description": "Wir haben Informationen erhalten, dass im Süden der Fabrik ein Stützpunkt eingenommen wurde, und wir müssen dorthin aufbrechen, um uns den anderen anzuschließen. Ich habe auch eine sonderbare Übertragung auf unserem sicheren Kanal von einer nicht identifizierten Person erhalten... Ich verstehe das nicht ganz.",
+    "Evelyn_4 startedMessageText": "Wir haben Informationen erhalten, dass im Süden der Fabrik ein Stützpunkt eingenommen wurde, und wir müssen dorthin aufbrechen, um uns den anderen anzuschließen. Ich habe auch eine sonderbare Übertragung auf unserem sicheren Kanal von einer nicht identifizierten Person erhalten... Ich verstehe das nicht ganz.",
+    "Evelyn_4 successMessageText": "...",
+    "Evelyn_4 Obj_1": "Entdecke Anastasia!",
+
+    "Evelyn_5 name": "Die kleine Truppe",
+    "Evelyn_5 description": "Hör zu... Es ist wirklich schlimm, wir müssen unsere Soldaten schnell behandeln. Besorge die medizinische Ausrüstung, die du finden kannst, und zwar schnell! Du solltest sie im medizinischen Gebäude auf dem Zollgelände finden.",
+    "Evelyn_5 startedMessageText": "Hör zu... Es ist wirklich schlimm, wir müssen unsere Soldaten schnell behandeln. Besorge die medizinische Ausrüstung, die du finden kannst, und zwar schnell! Du solltest sie im medizinischen Gebäude auf dem Zollgelände finden.",
+    "Evelyn_5 successMessageText": "Danke... Nun, wir haben nicht viel Zeit; wir müssen weitermachen.",
+    "Evelyn_5 Obj_1": "Gesundheit auf Stufe 3 erhöhen!",
+    "Evelyn_5 Obj_2": "Übergib 1 CMS, welches im Raid gefunden wurde!",
+    "Evelyn_5 Obj_3": "Übergib 2 Aluminium-Schienen, welche im Raid gefunden wurden!",
+    "Evelyn_5 Obj_4": "Übergib 2 CALOK-B, welche im Raid gefunden wurden!",
+    "Evelyn_5 Obj_5": "Übergib 2 IFAK, welche im Raid gefunden wurden!",
+    "Evelyn_5 Obj_6": "Übergib 3 Armee-Bandagen, welche im Raid gefunden wurden!",
+    "Evelyn_5 Obj_7": "Übergib 3 Morphin-Injektoren, welche im Raid gefunden wurden!"
+}

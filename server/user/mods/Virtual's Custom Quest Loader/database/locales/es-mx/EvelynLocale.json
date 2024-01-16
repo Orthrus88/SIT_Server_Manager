@@ -1,0 +1,61 @@
+{
+    "Evelyn_1 name": "El Oeste - Parte 1",
+    "Evelyn_1 description": "Qué desorden... ¡Espera, toma rápidamente esta Beretta y ayúdanos a deshacernos de esos gopniks lo antes posible! Las presentaciones pueden esperar.",
+    "Evelyn_1 startedMessageText": "Qué desorden... ¡Espera, toma rápidamente esta Beretta y ayúdanos a deshacernos de esos gopniks lo antes posible! Las presentaciones pueden esperar.",
+    "Evelyn_1 successMessageText": "¡Buen trabajo! Sabía que esos gopniks no serían un problema para ti.",
+    "Evelyn_1 Obj_1": "Mata a 8 Scavs usando una M9 Beretta en Fabrica (Factory).",
+
+    "Evelyn_2 name": "Listo pa' la batalla",
+    "Evelyn_2 description": "Antes de dirigirte al frente, necesitarás entrenar. No tenemos mucha gente aquí en el campamento y el tiempo se esta acabando... Acelera el ritmo.",
+    "Evelyn_2 startedMessageText": "Antes de dirigirte al frente, necesitarás entrenar. No tenemos mucha gente aquí en el campamento y el tiempo se esta acabando... Acelera el ritmo.",
+    "Evelyn_2 successMessageText": "Perfecto. Ahora estás listo para el combate.",
+    "Evelyn_2 Obj_1": "Aumenta Fuerza a Nivel 3",
+    "Evelyn_2 Obj_2": "Aumenta Resistencia a Nivel 2",
+
+    "Evelyn_3 name": "El Oeste - Parte 2",
+    "Evelyn_3 description": "Ahora que has completado tu entrenamiento, debemos abandonar la fábrica de una vez. Sí, es tarde, pero los BEAR nos detectaron debido a los disparos de los scavs y no estamos equipados para competir aquí. Sin embargo, tengo una idea antes de nuestra partida. Tome estas memorias USB y instalalas en la oficina condenada en el tercer piso. Contienen un pequeño obsequio de información falsa. Por la noche casi todo esta oscuro, así que ten cuidado.",
+    "Evelyn_3 startedMessageText": "Ahora que has completado tu entrenamiento, debemos abandonar la fábrica de una vez. Sí, es tarde, pero los BEAR nos detectaron debido a los disparos de los scavs y no estamos equipados para competir aquí. Sin embargo, tengo una idea antes de nuestra partida. Tome estas memorias USB y instalalas en la oficina condenada en el tercer piso. Contienen un pequeño obsequio de información falsa. Por la noche casi todo esta oscuro, así que ten cuidado.",
+    "Evelyn_3 successMessageText": "Bien, ¡ahora a pirarnos!",
+    "Evelyn_3 Obj_1": "Encuentra la ubicación de la oficina condenada (por la noche)",
+    "Evelyn_3 Obj_2": "Coloca los 3 pen drives",
+
+    "Evelyn_4 name": "Reunión inesperada",
+    "Evelyn_4 description": "Recibimos información de que han tomado una base al sur de la Fábrica y debemos dirigirnos allí para unirnos a los demás. También recibí una transmisión extraña en nuestro canal seguro de un individuo no identificado... No tengo ni puta idea.",
+    "Evelyn_4 startedMessageText": "Recibimos información de que han tomado una base al sur de la Fábrica y debemos dirigirnos allí para unirnos a los demás. También recibí una transmisión extraña en nuestro canal seguro de un individuo no identificado... No tengo ni puta idea.",
+    "Evelyn_4 successMessageText": "...",
+    "Evelyn_4 Obj_1": "Descubre a Anastasia!",
+
+    "Evelyn_5 name": "La pequeña pandilla",
+    "Evelyn_5 description": "Escucha... Es realmente un desastre; Necesitamos curar a nuestros soldados rápidamente. Busca los suministros médicos que puedas encontrar y hazlo rapido. Deberás encontrarlos en el edificio médico de la Aduana (Customs).",
+    "Evelyn_5 startedMessageText": "Escucha... Es realmente un desastre; Necesitamos curar a nuestros soldados rápidamente. Busca los suministros médicos que puedas encontrar y hazlo rapido. Deberás encontrarlos en el edificio médico de la Aduana (Customs).",
+    "Evelyn_5 successMessageText": "Gracias... Bueno, no tenemos mucho tiempo; Necesitamos volver al camino.",
+    "Evelyn_5 Obj_1": "Aumenta Salud a Nivel 3",
+    "Evelyn_5 Obj_2": "Entrega 1 CMS [Encuentra en incursion (Raid)]",
+    "Evelyn_5 Obj_3": "Entrega 2 Ferula Al. [Encuentra en incursion (Raid)]",
+    "Evelyn_5 Obj_4": "Entrega 2 Calok-B [Encuentra en incursion (Raid)]",
+    "Evelyn_5 Obj_5": "Entrega 2 IFAK [Encuentra en incursion (Raid)]",
+    "Evelyn_5 Obj_6": "Entrega 3 Vendajes del Ejercito [Encuentra en incursion (Raid)]",
+    "Evelyn_5 Obj_7": "Entrega 3 Morfinas [Encuentra en incursion (Raid)]",
+
+    "Evelyn_6 name": "Haciendo Limpieza",
+    "Evelyn_6 description": "¡Por fin llegamos a la aduana (Customs)! Exploradores, su tarea principal es establecer un perímetro seguro. Todos los demás, tomen un respiro y recarguen sus pilas. Compañero, tu misión es fundamental: dirigirte a los dormitorios, asegura un refugio seguro para nuestro descanso y consigue suministros de alimentos esenciales. ¡Muévete rápido! Necesito diseñar una estrategia para nuestro punto de encuentro con el grupo principal.",
+    "Evelyn_6 startedMessageText": "¡Por fin llegamos a la aduana (Customs)! Exploradores, su tarea principal es establecer un perímetro seguro. Todos los demás, tomen un respiro y recarguen sus pilas. Compañero, tu misión es fundamental: dirigirte a los dormitorios, asegura un refugio seguro para nuestro descanso y consigue suministros de alimentos esenciales. ¡Muévete rápido! Necesito diseñar una estrategia para nuestro punto de encuentro con el grupo principal.",
+    "Evelyn_6 successMessageText": "¡Bien hecho, pana! Sígueme a la cocina; Necesitamos discutir nuestra estrategia para reagruparnos con el equipo principal.",
+    "Evelyn_6 Obj_1": "Busca y trae 5 latas de Tushonka",
+    "Evelyn_6 Obj_2": "Busca y trae 5 botellas de agua Aquamari",
+    "Evelyn_6 Obj_3": "Elimina 8 amenazas en el área de dormitorios de la Aduana (Customs).",
+
+    "Evelyn_7 name": "Regalo de bienvenida",
+    "Evelyn_7 description": "¡Vamos, levantate! Toma tu arma, alguien está atacando los dormitorios. Parece un lugareño defendiendo su territorio y accidentalmente nos tropezamos con él. Pero ese no es nuestro problema por el momento. ¡Saludémoslos con algo de potencia de fuego occidental, operador!",
+    "Evelyn_7 startedMessageText": "¡Vamos, levantate! Toma tu arma, alguien está atacando los dormitorios. Parece un lugareño defendiendo su territorio y accidentalmente nos tropezamos con él. Pero ese no es nuestro problema por el momento. ¡Saludémoslos con algo de potencia de fuego occidental, operador!",
+    "Evelyn_7 successMessageText": "Uf... Ese tipo era duro... Bueno, apurémonos, tenemos que unirnos a nuestro grupo de soldados en la Base Militar.",
+    "Evelyn_7 Obj_1": "Extermina a Reshala",
+
+    "Evelyn_8 name": "El Oeste - Parte 3",
+    "Evelyn_8 description": "¡Parece que has encontrado oro, compa! ¿Ese trozo de papel que encontraste? Tiene información crítica. Quien orquestó esos ataques kamikazes contra nosotros parece tener vínculos en el noreste de la región de Tarkov. Según nuestro mapa, los lugares probables son las Calles de Tarkov (Streets of Tarkov) e Intercambio (Interchange). Comienza con Intercambio (Interchange); A ver si puedes encontrar a un señor de la guerra scav que está causando un alboroto y sacarle algo. ¡Es hora de localizar el problema en su origen!",
+    "Evelyn_8 startedMessageText": "¡Parece que has encontrado oro, compa! ¿Ese trozo de papel que encontraste? Tiene información crítica. Quien orquestó esos ataques kamikazes contra nosotros parece tener vínculos en el noreste de la región de Tarkov. Según nuestro mapa, los lugares probables son las Calles de Tarkov (Streets of Tarkov) e Intercambio (Interchange). Comienza con Intercambio (Interchange); A ver si puedes encontrar a un señor de la guerra scav que está causando un alboroto y sacarle algo. ¡Es hora de localizar el problema en su origen!",
+    "Evelyn_8 successMessageText": "Impecable trabajo ! Derrotaste brillantemente a ese señor de la guerra scav en Intercambio (Interchange). Al buscar en la zona, encontramos información valiosa sobre la posesión del señor de la guerra. Parece que tenía un mapa que describía las posibles ubicaciones de objetivos, puntos de interes y una lista de contactos. Esta información podría ser crucial para desentrañar su red. Tus acciones nos han proporcionado una ventaja significativa. ¡Gracias por asegurar esta información vital!",
+    "Evelyn_8 Obj_1": "Acaba con el señor de la guerra scav",
+    "Evelyn_8 Obj_2": "Sobrevive y extrae de la ubicación."
+
+}

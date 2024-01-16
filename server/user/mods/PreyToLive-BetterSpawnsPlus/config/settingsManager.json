@@ -1,0 +1,135 @@
+{
+    "mod": "PreyToLive-BetterSpawnsPlus-v2.0.2",
+    "description": "Settings Manager: Determines which settings are used in-game and provides some global overrides for spawn waves",
+    "modEnabled": true,
+    "settingsFolder": "settings_Shibdib",
+    "globalOverrides": {
+        "enabled": true,
+        "forceStopSpawnWaves": {
+            "enabled": false,
+            "pmcs": {
+                "timeInMinutes": {
+                    "customs": 10,
+                    "factory": 8,
+                    "interchange": 10,
+                    "labs": 15,
+                    "lighthouse": 10,
+                    "reserve": 10,
+                    "shoreline": 10,
+                    "streets": 10,
+                    "woods": 10
+                }
+            },
+            "scavs": {
+                "timeInMinutes": {
+                    "customs": 45,
+                    "factory": 30,
+                    "interchange": 45,
+                    "labs": 30,
+                    "lighthouse": 45,
+                    "reserve": 45,
+                    "shoreline": 45,
+                    "streets": 45,
+                    "woods": 45
+                }
+            }
+        },
+        "botChance": {
+            "pmcs": {
+                "enabled": false,
+                "chance": 80
+            },
+            "scavs": {
+                "enabled": false,
+                "chance": 100
+            },
+            "sniperScavs": {
+                "enabled": true,
+                "chance": 95
+            },
+            "bosses": {
+                "enabled": true,
+                "chance": {
+                    "glukhar": 12,
+                    "kaban": 12,
+                    "killa": 4,
+                    "knight": 12,
+                    "reshala": 12,
+                    "sanitar": 12,
+                    "shturman": 12,
+                    "tagilla": 12,
+                    "zryachiy": 25
+                }
+            },
+            "cultists": {
+                "enabled": false,
+                "chance": 100
+            },
+            "raiders": {
+                "enabled": false,
+                "chance": 100
+            },
+            "rogues": {
+                "enabled": false,
+                "chance": 100
+            },
+            "bloodhounds": {
+                "enabled": false,
+                "chance": 100
+            },
+            "weirdScavs": {
+                "enabled": false,
+                "chance": 100
+            }
+        },
+        "options": "easy, normal, hard, impossible",
+        "botDifficulty": {
+            "pmcs": {
+                "enabled": false,
+                "difficulty": "normal"
+            },
+            "scavs": {
+                "enabled": false,
+                "difficulty": "normal"
+            },
+            "sniperScavs": {
+                "enabled": false,
+                "difficulty": "normal"
+            },
+            "bosses": {
+                "enabled": true,
+                "difficulty": {
+                    "glukhar": "impossible",
+                    "kaban": "impossible",
+                    "killa": "impossible",
+                    "knight": "impossible",
+                    "reshala": "impossible",
+                    "sanitar": "impossible",
+                    "shturman": "impossible",
+                    "tagilla": "impossible",
+                    "zryachiy": "impossible"
+                }
+            },
+            "cultists": {
+                "enabled": false,
+                "difficulty": "normal"
+            },
+            "raiders": {
+                "enabled": true,
+                "difficulty": "impossible"
+            },
+            "rogues": {
+                "enabled": true,
+                "difficulty": "impossible"
+            },
+            "bloodhounds": {
+                "enabled": false,
+                "difficulty": "normal"
+            },
+            "weirdScavs": {
+                "enabled": false,
+                "difficulty": "normal"
+            }
+        }
+    }
+}

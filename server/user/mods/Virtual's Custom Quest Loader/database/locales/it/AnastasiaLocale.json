@@ -1,0 +1,17 @@
+{
+    "Anastasia_1 name": "La Fiera Degli Accessori",
+    "Anastasia_1 description": "Ciao, mi chiamo Anastasia. Sono russa, e no, non c'è bisogno che lo dici, so che ti ha mandato Svetlana. Sono colei che ti fornirà tutti gli accessori di cui hai bisogno per le tue armi, ma dovrai guadagnarteli. Ti assegnerò dei lavori da portare a termine. Completali con successo, e potrai ottenere accessori migliori. Oh, e come Svetlana, offro prezzi più ragionevoli rispetto agli altri venditori. Ah, compro anche a prezzi più vantaggiosi per te, così sai dove venderli. In bocca al lupo!",
+    "Anastasia_1 startedMessageText": "Ciao, mi chiamo Anastasia. Sono russa, e no, non c'è bisogno che lo dici, so che ti ha mandato Svetlana. Sono colei che ti fornirà tutti gli accessori di cui hai bisogno per le tue armi, ma dovrai guadagnarteli. Ti assegnerò dei lavori da portare a termine. Completali con successo, e potrai ottenere accessori migliori. Oh, e come Svetlana, offro prezzi più ragionevoli rispetto agli altri venditori. Ah, compro anche a prezzi più vantaggiosi per te, così sai dove venderli. In bocca al lupo!",
+    "Anastasia_1 successMessageText": "La tua reputazione ti precede. ottimo lavoro! Dai un'occhiata al mio negozio, avrai accesso a nuovi accessori.",
+    "Anastasia_1 Obj_1": "Elimina 20 PMC",
+    "Anastasia_1 Obj_2": "Elimina 20 Scavs",
+    "Anastasia_1 Obj_3": "Elimina 2 BOSS",
+
+    "Anastasia_2 name": "Membro dell' MI6 ?",
+    "Anastasia_2 description": "Come ti ho detto prima, qui ho tutto ciò che può servirti, ma ci sono delle condizioni a cui dovrai attenerti, e non sarà facile soddisfarle. Il tuo obbiettivo è quello di portarmi tutti i silenziatori che troverai, anche quelli già installati su delle armi. Non perdere tempo a cercarli nei negozi, voglio solo quelli veri, quelli che sono stati usati sul campo di battaglia. Oltre a questo, voglio anche che tu ponga fine alla vita di 50 scavs. È ora di mandarli fuori dal mio negozio, stanno diventando insopportabili.",
+    "Anastasia_2 startedMessageText": "Come ti ho detto prima, qui ho tutto ciò che può servirti, ma ci sono delle condizioni a cui dovrai attenerti, e non sarà facile soddisfarle. Il tuo obbiettivo è quello di portarmi tutti i silenziatori che troverai, anche quelli già installati su delle armi. Non perdere tempo a cercarli nei negozi, voglio solo quelli veri, quelli che sono stati usati sul campo di battaglia. Oltre a questo, voglio anche che tu ponga fine alla vita di 50 scavs. È ora di mandarli fuori dal mio negozio, stanno diventando insopportabili.",
+    "Anastasia_2 successMessageText": "Wow, ci sono così tanti silenziatori qui! Grazie davvero per questa incredibile collezione!",
+    "Anastasia_2 Obj_1": "Trova 20 Silenziatori in un raid",
+    "Anastasia_2 Obj_2": "Consegna i silenziatori",
+    "Anastasia_2 Obj_3": "Elimina 50 Scavs usando armi silenziate"
+}

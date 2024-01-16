@@ -1,0 +1,37 @@
+{
+    "Anastasia_1 name": "Extravaganza de accesorios!!",
+    "Anastasia_1 description": "Hey, soy Anastasia. Soy Rusa, y no hace falta que lo menciones, sé que te ha enviado Svetlana. Soy la proveedora de todos los accesorios que necesitas para tus armas, pero tendrás que ganártelos. Te asignaré tareas para realizar. Complétalas con éxito y podras esperar obtener mejores accesorios. Ah, y al igual que Svetlana, ofrezco precios más asequibles que otros comerciantes. También compro accesorios a precios más ventajosos, para que sepas dónde venderlos. ¡Buena suerte!",
+    "Anastasia_1 startedMessageText": "Hey, soy Anastasia. Soy Rusa, y no hace falta que lo menciones, sé que te ha enviado Svetlana. Soy la proveedora de todos los accesorios que necesitas para tus armas, pero tendrás que ganártelos. Te asignaré tareas para realizar. Complétalas con éxito y podras esperar obtener mejores accesorios. Ah, y al igual que Svetlana, ofrezco precios más asequibles que otros comerciantes. También compro accesorios a precios más ventajosos, para que sepas dónde venderlos. ¡Buena suerte!",
+    "Anastasia_1 successMessageText": "Tu reputación habla por sí sola. Muy buen trabajo! Echa un vistazo a mi tienda, tendrás acceso a nuevos accesorios.",
+    "Anastasia_1 Obj_1": "Elimina a 20 PMC",
+    "Anastasia_1 Obj_2": "Elimina a 20 Scavs",
+    "Anastasia_1 Obj_3": "Elimina a 2 Jefes",
+
+    "Anastasia_2 name": "Miembro del MI6 ?",
+    "Anastasia_2 description": "Como mencioné anteriormente, tengo todo aquí, pero hay algunas condiciones que cumplir, y no serán fáciles de cumplir. Tu objetivo es traerme todos los silenciadores que puedas encontrar, incluso los que ya están instalados en las armas. No te molestes en buscarlos en otras tiendas o comerciantes, quiero los auténticos, los que se han usado en el campo. Y, además de eso, quiero que acabes con la vida de 50 scavs. Es hora de sacarlos de mi tienda, ya se está poniendo insoportable.",
+    "Anastasia_2 startedMessageText": "Como mencioné anteriormente, tengo todo aquí, pero hay algunas condiciones que cumplir, y no serán fáciles de cumplir. Tu objetivo es traerme todos los silenciadores que puedas encontrar, incluso los que ya están instalados en las armas. No te molestes en buscarlos en otras tiendas o comerciantes, quiero los auténticos, los que se han usado en el campo. Y, además de eso, quiero que acabes con la vida de 50 scavs. Es hora de sacarlos de mi tienda, ya se está poniendo insoportable.",
+    "Anastasia_2 successMessageText": "Wow, hay tantos silenciadores aquí! Muchas gracias a ti por esta increible colección!",
+    "Anastasia_2 Obj_1": "Encuentra 20 Silenciadores en incursion (Raid)",
+    "Anastasia_2 Obj_2": "Entrega los silenciadores",
+    "Anastasia_2 Obj_3": "Elimina a 50 Scavs usando armas silenciadas",
+
+    "Anastasia_3 name": "Lealtad Real",
+    "Anastasia_3 description": "Aprecio tu método de trabajo, tu eficiencia y tu determinación. Aunque no tomo bandos, mi lealtad hacia mis clientes es inquebrantable. Este equilibrio con mis clientes me permite proporcionar equipos sin demoras en todo momento. Sin embargo, tu eres una excepción como intermediario con los BEAR y necesito saber que cuentas con su total confianza. Pruébalo y serás recompensado con el mejor arsenal que podrás encontrar en las tierras de Tarkov.",
+    "Anastasia_3 startedMessageText": "Aprecio tu método de trabajo, tu eficiencia y tu determinación. Aunque no tomo bandos, mi lealtad hacia mis clientes es inquebrantable. Este equilibrio con mis clientes me permite proporcionar equipos sin demoras en todo momento. Sin embargo, tu eres una excepción como intermediario con los BEAR y necesito saber que cuentas con su total confianza. Pruébalo y serás recompensado con el mejor arsenal que podrás encontrar en las tierras de Tarkov.",
+    "Anastasia_3 successMessageText": "¡Es increíble! ¡Sírvete tú mismo, te lo mereces! Podria ser de que tengamos la oportunidad de volver a trabajar juntos en nuevas tareas. Te veo despues, y no mueras.",
+    "Anastasia_3 Obj_1": "Logra lealtad real con Svetlana (LL4)",
+
+    "Anastasia_4 name": "Transmisión desconocida",
+    "Anastasia_4 description": "Hola camarada. Aún no me conoces, pero no te preocupes, nos convertiremos en los mejores amigos, te lo garantizo. Sé que tú y tu pequeña pandilla no llegaran muy lejos si no se abastecen conmigo, donde los pueda abastecer... Por cierto, deberías darte prisa y conseguir suministros médicos para tus camaradas, porque yo no doy mucho por tu cuerpo sin vida.",
+    "Anastasia_4 startedMessageText": "Hola camarada. Aún no me conoces, pero no te preocupes, nos convertiremos en los mejores amigos, te lo garantizo. Sé que tú y tu pequeña pandilla no llegaran muy lejos si no se abastecen conmigo, donde los pueda abastecer... Por cierto, deberías darte prisa y conseguir suministros médicos para tus camaradas, porque yo no doy mucho por tu cuerpo sin vida.",
+    "Anastasia_4 successMessageText": "Fin de la transmisión.",
+    "Anastasia_4 Obj_1": "Hasta luego.",
+
+    "Anastasia_5 name": "Venganza",
+    "Anastasia_5 description": "блудница ! ¡Lo siento, mercenario! Mi culpa por no haberte notado antes. Esos molestos scavs realmente arruinaron una gran parte de mi cargamento, y siento como si simplemente se estuvieran partiendo de risa de mí. Este es el trato: si estás dispuesto a enfrentarte a esos scavs y mostrarles quién es el jefe, podría haber una jugosa recompensa esperándote.",
+    "Anastasia_5 startedMessageText": "Que onda mercenario ! Mi culpa por no haberte notado antes. Esos molestos scavs realmente arruinaron una gran parte de mi cargamento, y siento como si simplemente se estuvieran partiendo de risa de mí. Este es el trato: si estás dispuesto a enfrentarte a esos scavs y mostrarles quién es el jefe, podría haber una jugosa recompensa esperándote.",
+    "Anastasia_5 successMessageText": "¡Buen trabajo, mercenario! No dudes en echar un vistazo a los artículos de mi tienda, ¡puede que ahora haya algo que te llame la atención!",
+    "Anastasia_5 Obj_1": "Elimina a 30 Scavs",
+    "Anastasia_5 Obj_2": "Elimina a 3 Jefes"
+
+}
