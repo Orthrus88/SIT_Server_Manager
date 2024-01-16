@@ -96,7 +96,6 @@ def update_status():
 class LogFileHandler(FileSystemEventHandler):
     def on_modified(self, event):
         global recent_log_content
-        print("Log file modified event triggered.")
         if event.is_directory:
             return
         if event.event_type == 'modified':
