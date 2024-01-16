@@ -1,8 +1,6 @@
 {% extends "zlayout.html" %}
 
 {% block content %}
-
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +58,19 @@
             setInterval(updateResourceUtilization, 1000);
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to update log content
+            function updateLogContent(data) {
+                // Update the log content element on the page
+                document.getElementById('log-content').innerText = data.content;
+            }
+    
+            // WebSocket connection for real-time log updates
+            var logSocket = io.connect('http://' + document.domain + ':' + location.port + '/logs');
+            logSocket.on('log_update', updateLogContent);
+        });
+    </script>
 </head>
 <body>
     <div style="display: flex; justify-content: space-between;">
@@ -85,29 +96,14 @@
         </div>
         <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
             <!-- Column 3: Additional Content -->
-            <h2>Column 3</h2>
-            <!-- Add your content here -->
+            <h2>Connected Players</h2>
+            Orthovsky
         </div>
     </div>
     <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
         <h2>Recent Log</h2>
         <pre id="log-content">{{ log_content }}</pre>
     </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to update log content
-            function updateLogContent(data) {
-                // Update the log content element on the page
-                document.getElementById('log-content').innerText = data.content;
-            }
-    
-            // WebSocket connection for real-time log updates
-            var logSocket = io.connect('http://' + document.domain + ':' + location.port + '/logs');
-            logSocket.on('log_update', updateLogContent);
-        });
-    </script>
 </body>
 </html>
-
 {% endblock content %}
