@@ -1,7 +1,0 @@
-{
-    "ip": "26.54.216.17",
-    "port": 6969,
-	"webSocketPingDelayMs": 90000,
-    "logRequests": false,
-	"serverImagePathOverride": {	}
-}
