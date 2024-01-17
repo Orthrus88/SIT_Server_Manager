@@ -30,7 +30,7 @@
             checkServerStatus();
 
             // WebSocket connection for real-time updates
-            var socket = io.connect('http://' + document.domain + ':' + location.port + '/status');
+            var socket = io.connect('/status');
             socket.on('status_update', function(data) {
                 document.getElementById('status').innerHTML = 'Status: ' + data.status;
             });
@@ -63,12 +63,18 @@
             // Function to update log content
             function updateLogContent(data) {
                 // Update the log content element on the page
-                document.getElementById('log-content').innerText = data.content;
+                console.log("Log data received:", data);
+                var logContainer = document.getElementById('log-content');
+                logContainer.innerText += data.content + '\n'; // Append new content
+                logContainer.scrollTop = logContainer.scrollHeight; // Auto-scroll to bottom
             }
     
             // WebSocket connection for real-time log updates
-            var logSocket = io.connect('http://' + document.domain + ':' + location.port + '/logs');
+            var logSocket = io.connect('/logs');
             logSocket.on('log_update', updateLogContent);
+            //logSocket.on('connect', function() {
+            //console.log('Connected to /logs namespace.');
+            //});
         });
     </script>
 </head>
@@ -100,8 +106,8 @@
         </div>
     </div>
     <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
-        <h2>Recent Log</h2>
-        <pre id="log-content">{{ log_content }}</pre>
+        <h2>Server Log</h2>
+        <pre id="log-content" style="height: 300px; overflow-y: auto; white-space: pre-wrap;">{{ log_content }}</pre>
     </div>
 </body>
 </html>
