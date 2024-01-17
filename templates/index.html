@@ -60,21 +60,66 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Function to update log content
-            function updateLogContent(data) {
-                // Update the log content element on the page
-                console.log("Log data received:", data);
+
+            // Function to update log content and limit it to 100 lines
+            function updateLogContent(newLogs) {
                 var logContainer = document.getElementById('log-content');
-                logContainer.innerText += data.content + '\n'; // Append new content
-                logContainer.scrollTop = logContainer.scrollHeight; // Auto-scroll to bottom
+                var currentLogs = logContainer.innerText + newLogs;
+                var logLines = currentLogs.split('\n');
+
+                // Keep only the last 100 lines
+                if (logLines.length > 100) {
+                    logLines = logLines.slice(-100);
+                }
+
+                logContainer.innerText = logLines.join('\n');
+                logContainer.scrollTop = logContainer.scrollHeight;
+
+                // Update connection info
+                updateConnectionInfo(logContainer.innerText);
             }
-    
-            // WebSocket connection for real-time log updates
-            var logSocket = io.connect('/logs');
-            logSocket.on('log_update', updateLogContent);
-            //logSocket.on('connect', function() {
-            //console.log('Connected to /logs namespace.');
-            //});
+
+            // Function to fetch and update logs
+            function fetchAndUpdateLogs() {
+                fetch('/fetch_logs')
+                    .then(response => response.json())
+                    .then(data => {
+                        updateLogContent(data.logs);
+                    })
+                    .catch(error => console.error('Error fetching logs:', error));
+            }
+
+            // Poll for new logs every 1 second
+            setInterval(fetchAndUpdateLogs, 1000);
+
+                        // Keep a set of connected players
+                        let connectedPlayers = new Set();
+
+            // Function to parse and update the connected players
+            function updateConnectedPlayers(logData) {
+                const playerPattern = /\[WS\] Player: (.+) \(\w+\) has connected/;
+                const logLines = logData.split('\n');
+
+                logLines.forEach(line => {
+                    const match = line.match(playerPattern);
+                    if (match && match[1]) {
+                        connectedPlayers.add(match[1]);
+                    }
+                });
+
+                // Update the connected players display
+                document.getElementById('connected-players').innerText = Array.from(connectedPlayers).join(', ');
+            }
+
+            // Function to parse and update connection info
+            function updateConnectionInfo(logData) {
+                const connectionInfoPattern = /Started webserver at (http:\/\/\d+\.\d+\.\d+\.\d+:\d+)/;
+                const match = logData.match(connectionInfoPattern);
+
+                if (match && match[1]) {
+                    document.getElementById('connection-info').innerText = 'Connection info: ' + match[1];
+                }
+            }
         });
     </script>
 </head>
@@ -102,12 +147,14 @@
         </div>
         <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
             <!-- Column 3: Additional Content -->
+            <h2 id="connection-info">Connection info: Not found</h2>
             <h2>Connected Players</h2>
+            <p id="connected-players">No players connected</p>
         </div>
     </div>
     <div style="flex: 1; padding: 10px; border: 1px solid #ccc;">
         <h2>Server Log</h2>
-        <pre id="log-content" style="height: 300px; overflow-y: auto; white-space: pre-wrap;">{{ log_content }}</pre>
+        <pre id="log-content" style="height: 300px; overflow-y: auto; white-space: pre-wrap;">{{ logs }}</pre>
     </div>
 </body>
 </html>
