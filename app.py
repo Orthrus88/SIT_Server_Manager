@@ -5,13 +5,12 @@ import threading
 import time
 import glob
 import json
-import requests
+
 
 # Third-party imports
 from flask import Flask, jsonify, redirect, render_template, url_for, request
 from flask_socketio import SocketIO, emit
 import psutil
-from fnmatch import fnmatch
 
 # Application setup
 app = Flask(__name__)
