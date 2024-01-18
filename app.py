@@ -4,9 +4,11 @@ import subprocess
 import threading
 import time
 import glob
+import json
+
 
 # Third-party imports
-from flask import Flask, jsonify, redirect, render_template, url_for
+from flask import Flask, jsonify, redirect, render_template, url_for, request
 from flask_socketio import SocketIO, emit
 import psutil
 
@@ -19,6 +21,7 @@ executable_status = "Stopped"
 recent_log_content = ""
 cpu_utilization = 0.0
 ram_utilization = 0.0
+items_data = {}
 
 # Utility functions
 def start_server():
@@ -120,17 +123,58 @@ def handle_connect():
 def handle_log_connect():
     emit('log_update', {'content': recent_log_content})
 
+#################### PMC Page ####################
+
+def load_item_data():
+    global items_data
+    try:
+        with open('items/items_data.json', 'r', encoding='utf-8') as file:
+            items_list = json.load(file)
+            # Adjust the dictionary comprehension to match the JSON structure
+            items_data = {item['item']['_id']: item['locale']['Name'] for item in items_list}
+        print("Loaded items data:", list(items_data.items())[:5])  # Print first 5 items for checking
+    except Exception as e:
+        print(f"Error loading item data: {e}")
+
+@app.route('/get_item_names', methods=['POST'])
+def get_item_names():
+    # Assuming you receive a list of 'tpl_ids' from the POST request
+    tpl_ids = request.json.get('tpl_ids', [])
+    item_names = [items_data.get(tpl_id, "Unknown") for tpl_id in tpl_ids]
+    return jsonify({"itemNames": item_names})
+
+@app.route('/pmc')
+def pmc():
+    folder_path = 'user\\profiles'
+    pmc_info = []
+
+    for filename in os.listdir(folder_path):
+        if filename.endswith('.json'):
+            file_path = os.path.join(folder_path, filename)
+            with open(file_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                pmc_data = data.get("characters", {}).get("pmc", {})
+                info = pmc_data.get("Info", {})
+                inventory = pmc_data.get("Inventory", {})
+                equipment_id = inventory.get("equipment", "")
+
+                # Get equipment items' tpl IDs
+                equipment_tpl_ids = [item['_tpl'] for item in inventory.get('items', []) if item.get('parentId') == equipment_id]
+
+                pmc_info.append({
+                    "nickname": info.get("LowerNickname", "Unknown"),
+                    "level": info.get("Level", "Unknown"),
+                    "side": info.get("Side", "Unknown"),
+                    "equipment_tpl_ids": equipment_tpl_ids  # Add this
+                })
+
+    return render_template('pmc.html', title='PMC', pmc_info=pmc_info)
+
 # Main entry point
 if __name__ == '__main__':
     resource_thread = threading.Thread(target=update_resource_utilization)
     resource_thread.start()
 
-    #log_thread = threading.Thread(target=tail_log_file)
-    #log_thread.start()
-
-    #test_log_thread = threading.Thread(target=emit_test_log)
-    #test_log_thread.start()
-
-    #app.logger.setLevel(logging.DEBUG)
+    load_item_data()
 
     socketio.run(app, host='0.0.0.0', debug=True)
