@@ -3,3 +3,4 @@ flask_bootstrap
 flask-socketio
 psutil
 flask-login
+eventlet
