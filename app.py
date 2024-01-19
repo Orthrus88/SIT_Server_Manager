@@ -11,7 +11,7 @@ import psutil
 
 # Import server functions from scripts.server
 from scripts.server import start_server, stop_server, check_status, fetch_logs, update_status, recent_log_content
-from scripts.pmc import load_item_data, get_item_names, pmc
+from scripts.pmc import load_item_data, get_item_names, pmc, delete_profile
 from scripts.shared import socketio
 
 # SSL Setup
@@ -112,6 +112,15 @@ def pmc_route():
     if not session.get('logged_in'):
         return redirect(url_for('login'))
     return pmc()
+
+@app.route('/delete_profile', methods=['POST'])
+def delete_profile_route():
+    data = request.get_json()
+    filename = data.get('filename')
+    if delete_profile(filename):
+        return jsonify({'success': True}), 200
+    else:
+        return jsonify({'success': False}), 404
 
 # Main entry point
 if __name__ == '__main__':
