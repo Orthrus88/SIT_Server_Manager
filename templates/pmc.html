@@ -37,7 +37,7 @@
                 <select id="pmc-select">
                     <option value="">Select a PMC</option>
                     {% for pmc in pmc_info %}
-                        <option value="{{ pmc.nickname }}" 
+                        <option value="{{ pmc.filename }}" 
                                 data-level="{{ pmc.level }}" 
                                 data-side="{{ pmc.side }}"
                                 data-equipment-tpl-ids="{{ ','.join(pmc.equipment_tpl_ids) }}">
@@ -45,9 +45,8 @@
                         </option>
                     {% endfor %}
                 </select>
-
                 <div id="pmc-info">
-                    <p>Nickname: <span id="nickname-display">Select a PMC</span></p>
+                    <p>Filename: <span id="nickname-display"></span></p>
                     <p>Level: <span id="level-display"></span></p>
                     <p>Side: <span id="side-display"></span></p>
                     <p>Equipped Items: <span id="equipment-list"></span></p>
@@ -56,33 +55,67 @@
             <div class="pmc-image">
                 <img src="{{ url_for('static', filename='images/inventory.png') }}" alt="PMC Inventory" style="width: 500px; height: auto;">
             </div>
+            <div>
+                <button id="delete-button">Delete Selected Profile</button>
+            </div>
         </div>
     </div>
-        <script>
-            document.getElementById('pmc-select').addEventListener('change', function() {
-                var selectedOption = this.options[this.selectedIndex];
-                document.getElementById('nickname-display').textContent = selectedOption.value;
-                document.getElementById('level-display').textContent = selectedOption.getAttribute('data-level');
-                document.getElementById('side-display').textContent = selectedOption.getAttribute('data-side');
-                var equipmentTplIds = selectedOption.getAttribute('data-equipment-tpl-ids').split(',');
+    <script>
+        document.getElementById('pmc-select').addEventListener('change', function() {
+            var selectedOption = this.options[this.selectedIndex];
+            document.getElementById('nickname-display').textContent = selectedOption.value;
+            document.getElementById('level-display').textContent = selectedOption.getAttribute('data-level');
+            document.getElementById('side-display').textContent = selectedOption.getAttribute('data-side');
+            var equipmentTplIds = selectedOption.getAttribute('data-equipment-tpl-ids').split(',');
 
-                fetch('/get_item_names', {
+            fetch('/get_item_names', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({tpl_ids: equipmentTplIds})
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the UI with the item names
+                document.getElementById('equipment-list').textContent = data.itemNames.join(', ');
+            })
+            .catch(error => {
+                console.error('Error fetching item names:', error);
+            });
+        });
+    </script>
+<script>
+    document.getElementById('delete-button').addEventListener('click', function() {
+        var selectElement = document.getElementById('pmc-select');
+        var filename = selectElement.value;
+
+        if (filename) {
+            if (confirm('Are you sure you want to delete this profile?')) {
+                fetch('{{ url_for("delete_profile_route") }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({tpl_ids: equipmentTplIds})
+                    body: JSON.stringify({ filename: filename })
                 })
-                .then(response => response.json())
-                .then(data => {
-                    // Update the UI with the item names
-                    document.getElementById('equipment-list').textContent = data.itemNames.join(', ');
+                .then(response => {
+                    if (response.ok) {
+                        alert('Profile deleted successfully');
+                        window.location.reload();
+                    } else {
+                        throw new Error('Failed to delete profile');
+                    }
                 })
                 .catch(error => {
-                    console.error('Error fetching item names:', error);
+                    console.error('Error:', error);
                 });
-            });
-        </script>
+            }
+        } else {
+            alert('Please select a profile to delete');
+        }
+    });
+</script>
 </body>
 </html>
 {% endblock content %}

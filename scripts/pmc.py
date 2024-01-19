@@ -21,7 +21,7 @@ def get_item_names():
     return jsonify({"itemNames": item_names})
 
 def pmc():
-    folder_path = 'user\\profiles'
+    folder_path = os.path.join('user', 'profiles')
     pmc_info = []
 
     for filename in os.listdir(folder_path):
@@ -37,10 +37,29 @@ def pmc():
                 equipment_tpl_ids = [item['_tpl'] for item in inventory.get('items', []) if item.get('parentId') == equipment_id]
 
                 pmc_info.append({
+                    "filename": filename,
                     "nickname": info.get("LowerNickname", "Unknown"),
                     "level": info.get("Level", "Unknown"),
                     "side": info.get("Side", "Unknown"),
                     "equipment_tpl_ids": equipment_tpl_ids
                 })
+    return render_template('pmc.html', pmc_info=pmc_info)
 
-    return render_template('pmc.html', title='PMC', pmc_info=pmc_info)
+def delete_profile(filename):
+    file_path = os.path.join('user', 'profiles', filename)
+    absolute_path = os.path.abspath(file_path)  # Get the absolute path for debugging
+
+    print(f"Trying to delete: {absolute_path}")
+    print(f"Current working directory: {os.getcwd()}")
+
+    if os.path.exists(absolute_path):
+        try:
+            os.remove(absolute_path)
+            print(f"File {absolute_path} deleted successfully.")
+            return True
+        except Exception as e:
+            print(f"Error deleting file: {e}")
+    else:
+        print(f"File {absolute_path} not found.")
+
+    return False
