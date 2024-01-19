@@ -1,0 +1,88 @@
+{% extends "zlayout.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ PMC }}</title>
+    <style>
+        .pmc-page {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .pmc-details {
+            /* Adjust width as needed */
+            flex: 1;
+        }
+        .pmc-image {
+            /* Adjust width as needed, or use a max-width for responsiveness */
+            flex-basis: 300px;
+            margin-left: 20px; /* Space between the sections */
+        }
+        .pmc-image img {
+            width: 100%; /* Make image responsive */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pmc-page">
+            <section class="pmc-details">
+                <h2>PMC Details</h2>
+                <select id="pmc-select">
+                    <option value="">Select a PMC</option>
+                    {% for pmc in pmc_info %}
+                        <option value="{{ pmc.nickname }}" 
+                                data-level="{{ pmc.level }}" 
+                                data-side="{{ pmc.side }}"
+                                data-equipment-tpl-ids="{{ ','.join(pmc.equipment_tpl_ids) }}">
+                            {{ pmc.nickname }}
+                        </option>
+                    {% endfor %}
+                </select>
+
+                <div id="pmc-info">
+                    <p>Nickname: <span id="nickname-display">Select a PMC</span></p>
+                    <p>Level: <span id="level-display"></span></p>
+                    <p>Side: <span id="side-display"></span></p>
+                    <p>Equipped Items: <span id="equipment-list"></span></p>
+                </div>
+            </section>
+            <div class="pmc-image">
+                <img src="{{ url_for('static', filename='images/inventory.png') }}" alt="PMC Inventory" style="width: 500px; height: auto;">
+            </div>
+        </div>
+    </div>
+        <script>
+            document.getElementById('pmc-select').addEventListener('change', function() {
+                var selectedOption = this.options[this.selectedIndex];
+                document.getElementById('nickname-display').textContent = selectedOption.value;
+                document.getElementById('level-display').textContent = selectedOption.getAttribute('data-level');
+                document.getElementById('side-display').textContent = selectedOption.getAttribute('data-side');
+                var equipmentTplIds = selectedOption.getAttribute('data-equipment-tpl-ids').split(',');
+
+                fetch('/get_item_names', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({tpl_ids: equipmentTplIds})
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Update the UI with the item names
+                    document.getElementById('equipment-list').textContent = data.itemNames.join(', ');
+                })
+                .catch(error => {
+                    console.error('Error fetching item names:', error);
+                });
+            });
+        </script>
+</body>
+</html>
+{% endblock content %}

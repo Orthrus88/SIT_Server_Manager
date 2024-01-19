@@ -5,7 +5,7 @@ import time
 
 
 # Third-party imports
-from flask import Flask, jsonify, redirect, render_template, url_for, request
+from flask import Flask, jsonify, redirect, render_template, url_for, request, redirect, flash, session
 from flask_socketio import emit
 import psutil
 
@@ -14,17 +14,42 @@ from scripts.server import start_server, stop_server, check_status, fetch_logs, 
 from scripts.pmc import load_item_data, get_item_names, pmc
 from scripts.shared import socketio
 
+# SSL Setup
+import eventlet
+import eventlet.wsgi
+from eventlet import wrap_ssl
+
 # Application setup
 app = Flask(__name__)
 socketio.init_app(app) #, logger=True, engineio_logger=True
+app.secret_key = 'your_secret_key' #session token change to w/e you want
 
 # Global variables
 cpu_utilization = 0.0
 ram_utilization = 0.0
 
 # Routes
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username == 'admin' and password == 'orthrus':
+            session['logged_in'] = True  # Set session variable
+            return redirect(url_for('home'))
+        else:
+            flash('Invalid credentials')
+    return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None)  # Remove session variable
+    return redirect(url_for('login'))
+
 @app.route('/')
 def home():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
     return render_template('index.html', title='Home', cpu=cpu_utilization, ram=ram_utilization)
 
 ################## Get resource utilization and convert it to json format ##################
@@ -78,59 +103,14 @@ def handle_log_connect():
     emit('log_update', {'content': recent_log_content})
 
 #################### PMC Page ####################
-'''
-def load_item_data():
-    global items_data
-    try:
-        with open('items/items_data.json', 'r', encoding='utf-8') as file:
-            items_list = json.load(file)
-            # Adjust the dictionary comprehension to match the JSON structure
-            items_data = {item['item']['_id']: item['locale']['Name'] for item in items_list}
-        print("Loaded items data:", list(items_data.items())[:5])  # Print first 5 items for checking
-    except Exception as e:
-        print(f"Error loading item data: {e}")
-
-@app.route('/get_item_names', methods=['POST'])
-def get_item_names():
-    # Assuming you receive a list of 'tpl_ids' from the POST request
-    tpl_ids = request.json.get('tpl_ids', [])
-    item_names = [items_data.get(tpl_id, "Unknown") for tpl_id in tpl_ids]
-    return jsonify({"itemNames": item_names})
-
-@app.route('/pmc')
-def pmc():
-    folder_path = 'user\\profiles'
-    pmc_info = []
-
-    for filename in os.listdir(folder_path):
-        if filename.endswith('.json'):
-            file_path = os.path.join(folder_path, filename)
-            with open(file_path, 'r', encoding='utf-8') as file:
-                data = json.load(file)
-                pmc_data = data.get("characters", {}).get("pmc", {})
-                info = pmc_data.get("Info", {})
-                inventory = pmc_data.get("Inventory", {})
-                equipment_id = inventory.get("equipment", "")
-
-                # Get equipment items' tpl IDs
-                equipment_tpl_ids = [item['_tpl'] for item in inventory.get('items', []) if item.get('parentId') == equipment_id]
-
-                pmc_info.append({
-                    "nickname": info.get("LowerNickname", "Unknown"),
-                    "level": info.get("Level", "Unknown"),
-                    "side": info.get("Side", "Unknown"),
-                    "equipment_tpl_ids": equipment_tpl_ids  # Add this
-                })
-
-    return render_template('pmc.html', title='PMC', pmc_info=pmc_info)
-'''
-
 @app.route('/get_item_names', methods=['POST'])
 def get_item_names_route():
     return get_item_names()
 
 @app.route('/pmc')
 def pmc_route():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
     return pmc()
 
 # Main entry point
@@ -141,4 +121,10 @@ if __name__ == '__main__':
 
     load_item_data()
 
-    socketio.run(app, host='0.0.0.0', debug=True)
+    ssl_context = (os.path.join('cert', 'cert.pem'), os.path.join('cert', 'key.pem'))
+    socket = eventlet.listen(('0.0.0.0', 443))
+    socket_ssl = wrap_ssl(socket, certfile=ssl_context[0], keyfile=ssl_context[1], server_side=True)
+
+    eventlet.wsgi.server(socket_ssl, app)
+
+    #socketio.run(app, host='0.0.0.0', debug=True)
