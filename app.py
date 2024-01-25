@@ -21,7 +21,7 @@ from eventlet import wrap_ssl
 
 # Application setup
 app = Flask(__name__)
-socketio.init_app(app) #, logger=True, engineio_logger=True
+socketio.init_app(app) #, logger=True, engineio_logger=True <- Debug statements for testing
 app.secret_key = 'your_secret_key' #session token change to w/e you want
 
 # Global variables

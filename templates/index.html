@@ -95,24 +95,13 @@
             // Poll for new logs every 1 second
             setInterval(fetchAndUpdateLogs, 1000);
 
-                        // Keep a set of connected players
-                        let connectedPlayers = new Set();
 
-            // Function to parse and update the connected players
-            function updateConnectedPlayers(logData) {
-                const playerPattern = /\[WS\] Player: (.+) \(\w+\) has connected/;
-                const logLines = logData.split('\n');
-
-                logLines.forEach(line => {
-                    const match = line.match(playerPattern);
-                    if (match && match[1]) {
-                        connectedPlayers.add(match[1]);
-                    }
-                });
-
-                // Update the connected players display
-                document.getElementById('connected-players').innerText = Array.from(connectedPlayers).join(', ');
-            }
+            var socket = io.connect('/status');
+            socket.on('connected_players_update', function(data) {
+                var connectedPlayersElement = document.getElementById('connected-players');
+                connectedPlayersElement.innerText = data.players.join(', ');
+                console.log("Received connected players update:", data.players);
+            });
 
             // Function to parse and update connection info
             function updateConnectionInfo(logData) {
