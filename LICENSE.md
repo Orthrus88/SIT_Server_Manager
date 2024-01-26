@@ -1,4 +1,7 @@
-## creative commons
+# creative commons
+
+## Link to CC BY-NC-SA overview
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en
 
 # Attribution-NonCommercial-ShareAlike 4.0 International
 
